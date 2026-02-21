@@ -6,21 +6,15 @@ function Header(){
             <header style={styles.header}>
                 <div style={styles.logo}>MyApp</div>
                 <nav style={styles.nav}>
-                    <NavLink to="/" style={({isActive})=>
-                        isActive?styles.activeLink:styles.link
-                    }>
+                    <NavLink to="/" style={({isActive})=> isActive?styles.activeLink:styles.link} >
                         Home
                     </NavLink>
                     
-                    <NavLink to="/about" style={({isActive})=>
-                        isActive?styles.activeLink:styles.link
-                    }>
+                    <NavLink to="/about" style={({isActive})=> isActive?styles.activeLink:styles.link} >
                         About
                     </NavLink>
                     
-                    <NavLink to="/contact" style={({isActive})=>
-                        isActive?styles.activeLink:styles.link
-                    }>
+                    <NavLink to="/contact" style={({isActive})=> isActive?styles.activeLink:styles.link}>
                         Contact
                     </NavLink>
                 </nav>
@@ -53,13 +47,19 @@ const styles={
     },
     link: {
         textDecoration: "none",
-        color: "#333",
-        padding: "6px 10px",
-        borderRadius: "6px",
+        color: "#352121",
+        padding: "6px 4px",
+        
+    
+       
     },
     activeLink: {
-        backgroundColor: "#2563eb",
-        color: "#fff",
+        borderBottom:"2px solid #ff2929",
+        textDecoration: "none",
+        padding: "6px 4px",
+        paddingBottom:"4px"
+
+        
     }
 
 }
